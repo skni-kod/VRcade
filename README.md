@@ -14,7 +14,7 @@ Directory Structure
    - Game A
    - Game B
    - [...]
-  - Other
+   - Other
  - Hub
  - Settings
    - vrcade.json

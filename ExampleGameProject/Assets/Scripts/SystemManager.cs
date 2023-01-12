@@ -22,8 +22,8 @@ public class SystemManager : MonoBehaviour
         else
         {
             Instance = this;
-            UnityEngine.Debug.Log(Application.dataPath + "/../../Settings/vrcade.json");
-            using (StreamReader r = new StreamReader(Application.dataPath + "/../../Settings/vrcade.json"))
+            UnityEngine.Debug.Log(Application.dataPath + "/../../../Settings/vrcade.json");
+            using (StreamReader r = new StreamReader(Application.dataPath + "/../../../Settings/vrcade.json"))
             {
                 string json = r.ReadToEnd();
                 globalSettings = JsonUtility.FromJson<VRcadeSettings>(json);
@@ -53,7 +53,6 @@ public class SystemManager : MonoBehaviour
             UnityEngine.Debug.Log("ShouldLaunch:" + globalSettings.VrcadeInstallPath + path);
             UnityEditor.EditorApplication.isPlaying = false;
 #else
-            UnityEngine.Debug.Log("ShouldLaunch:" + globalSettings.VrcadeInstallPath + path);            
             Process.Start(globalSettings.VrcadeInstallPath + path);            
             Application.Quit();
 #endif

@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Testing_DH_Minigame.unity
+    guid: ffcec212cc878324b9f5a2cac5cde74c
+  - enabled: 1
+    path: Assets/Machines/DHVR/Scenes/DHMinigameScene.unity
+    guid: 2f73028d8373513499a448ca4dda3929
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
